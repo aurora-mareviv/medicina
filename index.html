@@ -1,0 +1,302 @@
+<!-- <%@ language="javascript"%> -->
+<!DOCTYPE html>
+<html lang="en-150">
+	
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" media="all"> <!--bootswatch-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!--google icons-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--font awesome 20px-sm-->	
+	<link rel="stylesheet" href="./assets/css/extra.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-104312945-1', 'auto');
+	  ga('send', 'pageview');
+	  
+	  
+	  function changeLangEn() {
+		  var titulo = "Anesthesia, Critical Care & Pain Management";
+		  var titulo2 = "University of Santiago de Compostela";
+		  var contents = "Contents";
+		  var contents2 = "Useful resources for Anesthesia";
+		  var acidbase_calc = "Acid-Base Equilibrium";
+		  var acidbase_calc2 = "Resources on Acid-Base Equilibrium (evaluation)";
+		  var bohr_calc = "Bohr Effect";
+		  var bohr_calc2 = "Bohr Effect in the Hemoglobin (evaluation)";
+		  var contacto = "Contact";
+		  var nutritionLink = document.getElementById("acidbaseLink");
+		  var bohrLink = document.getElementById("bohrLink");
+		  
+		  document.getElementById("titulo").innerHTML = titulo;
+		  document.getElementById("titulo2").innerHTML = titulo2;
+		  document.getElementById("contents").innerHTML = contents;
+		  document.getElementById("contents2").innerHTML = contents2;
+		  document.getElementById("acidbase_calc").innerHTML = acidbase_calc;
+		  document.getElementById("acidbase_calc2").innerHTML = acidbase_calc2;
+		  document.getElementById("bohr_calc").innerHTML = bohr_calc;
+		  document.getElementById("bohr_calc2").innerHTML = bohr_calc2;
+		  document.getElementById("contacto").innerHTML = contacto;
+		  acidbaseLink.setAttribute('href', "https://medicalc.shinyapps.io/acidbase/");
+		  bohrLink.setAttribute('href', "https://medicalc.shinyapps.io/bohr/");
+	  }
+	  
+	  function changeLangEs() {
+		  var titulo = "Anestesia, Reanimaci&oacute;n y Dolor";
+		  var titulo2 = "Universidade de Santiago de Compostela";
+		  var contents = "Contenidos";
+		  var contents2 = "Recursos &uacute;tiles en Anestesia";
+		  var acidbase_calc = "Equilibrio Acido-Base";
+		  var acidbase_calc2 = "Apuntes sobre Equilibrio Acido-Base (evaluaci&oacute;n)";
+		  var bohr_calc = "Efecto Bohr";
+		  var bohr_calc2 = "El efecto Bohr en la Hemoglobina (evaluaci&oacute;n)";
+		  var contacto = "Contacto";
+		  var acidbaseLink = document.getElementById("acidbaseLink");
+		  var bohrLink = document.getElementById("bohrLink");
+		  
+		  document.getElementById("titulo").innerHTML = titulo;
+		  document.getElementById("titulo2").innerHTML = titulo2;
+		  document.getElementById("contents").innerHTML = contents;
+		  document.getElementById("contents2").innerHTML = contents2;
+		  document.getElementById("acidbase_calc").innerHTML = acidbase_calc;
+		  document.getElementById("acidbase_calc2").innerHTML = acidbase_calc2;
+		  document.getElementById("bohr_calc").innerHTML = bohr_calc;
+		  document.getElementById("bohr_calc2").innerHTML = bohr_calc2;
+		  document.getElementById("contacto").innerHTML = contacto;
+		  acidbaseLink.setAttribute('href', "https://medicalc.shinyapps.io/acidbase/");
+		  bohrLink.setAttribute('href', "https://medicalc.shinyapps.io/bohr/");
+	  }
+	  
+	  
+	</script>
+			
+	<style>
+		.input-lg {
+		  font-size: 30px;
+		}
+		.input {
+		  font-size: 20px;
+		}
+		
+		a:link, a:visited  {
+			color: #ffffff;
+			text-decoration: none;
+		}
+		
+		/*
+		.panel {
+		    border: 1px solid #1d4249; 
+		    border-radius:0;
+		    transition: box-shadow 0.5s;
+		}
+		
+		.panel:hover {
+		    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+		    background-color: #fff !important;
+		}		
+		.panel1:hover {
+		    border: 1px solid #d04949;
+		    color: #d04949;
+		}
+		.panel2:hover {
+		    border: 1px solid #6995b0;
+		    color: #6995b0;
+		}
+		.panel3:hover {
+		    border: 1px solid #cca300;
+		    color: #cca300;
+		}
+
+		.panel1 .button:hover {
+		    border: 1px solid #d04949;
+		    background-color: #d04949 !important;
+		    color: #d04949;
+		}
+		.panel2 .button:hover {
+		    border: 1px solid #6995b0;
+		    background-color: #6995b0 !important;
+		    color: #6995b0;
+		}
+		.panel3 .button:hover {
+		    border: 1px solid #cca300;
+		    background-color: #cca300 !important;
+		    color: #cca300;
+		}
+
+		.panel-footer .btn:hover {
+		    border: 1px solid #f4511e;
+		    background-color: #fff !important;
+		    color: #f4511e;
+		}*/
+		
+		/*
+		.panel-heading {
+		    color: #fff !important;
+		    background-color: #1d4249 !important;
+		    padding: 25px;
+		    border-bottom: 1px solid transparent;
+		    border-top-left-radius: 0px;
+		    border-top-right-radius: 0px;
+		    border-bottom-left-radius: 0px;
+		    border-bottom-right-radius: 0px;
+		}
+		
+
+		.panel-footer {
+		    background-color: #fff !important;
+		}
+
+		.panel-footer h3 {
+		    font-size: 32px;
+		}
+
+		.panel-footer h4 {
+		    color: #aaa;
+		    font-size: 14px;
+		}
+
+		.panel-footer .btn {
+		    margin: 15px 0;
+		    background-color: #1d4249;
+		    color: #fff;
+		}
+		
+		a:link {
+			color: #1d4249 !important;
+			text-decoration: none;
+		} 
+		
+		a:visited {
+			color: #1d4249;
+			text-decoration: none;
+		}
+		
+		.panel1 a:hover {
+			color: #d04949;
+			text-decoration: none;
+		}
+		.panel2 a:hover {
+			color: #6995b0;
+			text-decoration: none;
+		}
+		.panel3 a:hover {
+			color: #cca300;
+			text-decoration: none;
+		}
+		*/
+	</style>		
+			
+			
+			
+	<title>USC - Anestesia</title>
+</head>
+
+
+<body>
+
+<div id="intro" class="jumbotron text-center">
+  <h1><span id="titulo"> Anestesia, Reanimaci&oacute;n y Dolor </span> &nbsp; <span class="fa fa-medkit"></a></span></h1> 
+  <h3><span id="titulo2"> Universidade de Santiago de Compostela</span> </h3> 
+  	<div class="row">
+		<div class="col-sm-5 col-md-5 col-xs-4 text-center">
+		</div> <!--EOF column-->
+		<div class="col-sm-1 col-md-1 col-xs-2 text-center">
+			<h4><img class="img-responsive button" src="./assets/img/gray3-spain.png" alt="spanish" onclick="changeLangEs()"></h4> 
+		</div> <!--EOF column-->
+		<div class="col-sm-1 col-md-1 col-xs-2 text-center">
+			<h4><img class="img-responsive button" src="./assets/img/gray3-uk.png" alt="english" onclick="changeLangEn()"></h4> 
+		</div> <!--EOF column-->
+		<div class="col-sm-5 col-md-5 col-xs-4 text-center">
+		</div> <!--EOF column-->
+	</div> <!--EOF row-->
+</div> <!--EOF jumbotron-->
+<hr>
+
+
+<div id="calculators" class="container-fluid">
+  <div class="text-center">
+    <h2><span id="contents"> Contenidos</span> </h2>
+    <h4><span id="contents2"> Recursos &uacute;tiles en Anestesia</span> </h4>
+	<h3></h3>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel3 panel-default text-center">
+		<a id="acidbaseLink" href="https://medicalc.shinyapps.io/acidbase/" target="blank">
+        <div class="button panel-heading">
+          <h1><span id="acidbase_calc"> Equilibrio Acido-Base</span> </h1>
+        </div> <!--EOF panel-heading-->
+        <div class="panel3 panel-body">
+          <p><span id="acidbase_calc2"> Apuntes sobre Equilibrio Acido-Base (evaluaci&oacute;n)</span> </p>
+        </div> <!--EOF panel-body-->
+		</a>
+      </div> <!--EOF panel-->    
+    </div>  <!--EOF column-->   
+	
+    <div class="col-sm-6 col-xs-12">
+      <div class="panel panel2 panel-default text-center">
+		<a id="bohrLink" href="https://medicalc.shinyapps.io/bohr/" target="blank">
+        <div class="button panel-heading">
+          <h1><span id="bohr_calc"> Efecto Bohr</span> </h1>
+        </div> <!--EOF panel-heading-->
+        <div class="panel2 panel-body">
+          <p><span id="bohr_calc2"> El efecto Bohr en la Hemoglobina (evaluaci&oacute;n)</span> </p>
+        </div> <!--EOF panel-body-->
+		</a>
+      </div> <!--EOF panel-->    
+    </div>  <!--EOF column-->
+	
+	
+  </div> <!--EOF row-->
+</div> <!--EOF container-->
+	
+	
+
+<div id="contact" class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 noScreen text-center">
+			<h2><span id="contacto"> Contacto</span> </h2>
+			<div class="well well-sm well-sm">
+				<p><a href="mailto:mariauror@gmail.com" style="color:#ffffff"><span class="fa fa-user-md"></span> Aurora Baluja Gonz&aacute;lez</a></p>
+	        	<p><span class="fa fa-hospital-o"></span> Servicio de Anestesiolog&iacute;a y Reanimaci&oacute;n. Hospital Cl&iacute;nico Universitario</p>
+	        	<p><span class="glyphicon glyphicon-map-marker"></span> Santiago de Compostela, Spain</p>
+			</div> <!--EOF well-sm-->
+			<p><h3>
+				<!--
+			   <a href="https://github.com/aurora-mareviv" target="blank" style="color:#3d4a59"><span class="fa fa-github"></a>&nbsp;</span>
+				-->
+			   <a href="https://talesofr.wordpress.com" target="blank" style="color:#3d4a59"><span class="fa fa-rss"></a></span>
+			   <a href="https://twitter.com/maureviv" target="blank" style="color:#3d4a59"><span class="fa fa-twitter"></a></span>
+			   </h3> 
+		   	</p>
+		</div> <!--EOF column-->
+	</div> <!--EOF row-->
+</div> <!--EOF container-->
+
+<div id="license" class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 noScreen">
+			<h3> </h3>
+			<hr>
+			<p style="color:#bfbfbf"><span class="fa fa-linux" style="color:#bfbfbf"></span> 
+				License - <a href="https://github.com/aurora-mareviv" target="blank" style="color:#bfbfbf">Code</a>: GNU-GPL v3. 
+				<a href="http://getbootstrap.com/" target="blank" style="color:#bfbfbf">Bootstrap CSS</a>, 
+				<a href="https://bootswatch.com/" target="blank" style="color:#bfbfbf">Bootswatch theme</a>: MIT.
+			</p>
+		</div> <!--EOF column-->
+	</div> <!--EOF row-->
+</div> <!--EOF container-->
+
+
+
+
+</body>	
+</html>

@@ -92,53 +92,22 @@
 			color: #ffffff;
 			text-decoration: none;
 		}
-		
-		/*
+
 		.panel {
-		    border: 1px solid #1d4249; 
+		    /*border: 1px solid #1d4249; */
 		    border-radius:0;
 		    transition: box-shadow 0.5s;
 		}
-		
+				
 		.panel:hover {
 		    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
 		    background-color: #fff !important;
-		}		
-		.panel1:hover {
-		    border: 1px solid #d04949;
-		    color: #d04949;
+			color: #1f2e3e !important;
 		}
-		.panel2:hover {
-		    border: 1px solid #6995b0;
-		    color: #6995b0;
-		}
-		.panel3:hover {
-		    border: 1px solid #cca300;
-		    color: #cca300;
-		}
-
-		.panel1 .button:hover {
-		    border: 1px solid #d04949;
-		    background-color: #d04949 !important;
-		    color: #d04949;
-		}
-		.panel2 .button:hover {
-		    border: 1px solid #6995b0;
-		    background-color: #6995b0 !important;
-		    color: #6995b0;
-		}
-		.panel3 .button:hover {
-		    border: 1px solid #cca300;
-		    background-color: #cca300 !important;
-		    color: #cca300;
-		}
-
-		.panel-footer .btn:hover {
-		    border: 1px solid #f4511e;
-		    background-color: #fff !important;
-		    color: #f4511e;
-		}*/
-		
+		.panel a:hover {
+			color: #1f2e3e;
+			text-decoration: none;
+		}	
 		/*
 		.panel-heading {
 		    color: #fff !important;
@@ -150,48 +119,43 @@
 		    border-bottom-left-radius: 0px;
 		    border-bottom-right-radius: 0px;
 		}
-		
+		*/
 
 		.panel-footer {
 		    background-color: #fff !important;
 		}
-
+		.panel-footer .btn:hover {
+		    border: 1px solid #f4511e;
+		    background-color: #fff !important;
+			color: #1f2e3e;
+		}
+		.panel-footer .btn {
+		    margin: 15px 0;
+		    /*background-color: #1d4249;*/
+		    color: #fff;
+		}
+		
 		.panel-footer h3 {
 		    font-size: 32px;
 		}
-
 		.panel-footer h4 {
 		    color: #aaa;
 		    font-size: 14px;
 		}
-
-		.panel-footer .btn {
-		    margin: 15px 0;
-		    background-color: #1d4249;
-		    color: #fff;
-		}
 		
-		a:link {
-			color: #1d4249 !important;
-			text-decoration: none;
-		} 
-		
-		a:visited {
-			color: #1d4249;
-			text-decoration: none;
-		}
-		
+		/*
 		.panel1 a:hover {
-			color: #d04949;
+			color: #1f2e3e;
 			text-decoration: none;
 		}
-		.panel2 a:hover {
-			color: #6995b0;
-			text-decoration: none;
+		.panel1:hover {
+		    border: 1px solid #d04949;
+		    color: #d04949;
 		}
-		.panel3 a:hover {
-			color: #cca300;
-			text-decoration: none;
+		.panel1 .button:hover {
+		    border: 1px solid #d04949;
+		    background-color: #d04949 !important;
+		    color: #d04949;
 		}
 		*/
 	</style>		
@@ -231,12 +195,12 @@
   </div>
   <div class="row slideanim">
     <div class="col-sm-6 col-xs-12">
-      <div class="panel panel3 panel-default text-center">
+      <div class="panel panel1 panel-default text-center">
 		<a id="acidbaseLink" href="https://medicalc.shinyapps.io/acidbase/" target="blank">
         <div class="button panel-heading">
           <h1><span id="acidbase_calc"> Equilibrio Acido-Base</span> </h1>
         </div> <!--EOF panel-heading-->
-        <div class="panel3 panel-body">
+        <div class="panel1 panel-body">
           <p><span id="acidbase_calc2"> Apuntes sobre Equilibrio Acido-Base (evaluaci&oacute;n)</span> </p>
         </div> <!--EOF panel-body-->
 		</a>

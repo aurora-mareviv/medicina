@@ -138,6 +138,8 @@ border-color: #d6e9c6;
 }
 
 /*general link formating*/
+/*inactivated for medicalc/*
+/*
 a:link, a:visited  {
 	color: var(--lightBlue);
 	text-decoration: none;
@@ -146,6 +148,7 @@ a:hover{
 	color: var(--lightBlue-hover);
 	text-decoration: none;
 }
+/*
 
 /*navbar default link formatting*/
 .navbar, .navbar-nav, .navbar-default {
